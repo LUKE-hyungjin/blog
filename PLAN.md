@@ -57,13 +57,13 @@ PLAN:
      - run: hugo mod tidy
      - verify: hugo server로 테마가 정상 적용되는지 확인
 
-  3) 사이트 기본 설정(운영 최소치)
+  3) 사이트 기본 설정(운영 최소치) ✅ (완료)
      - set: baseURL = pages_base_url
      - set: languageCode, title, timeZone = "Asia/Seoul"
      - set: pagination, summaryLength, outputs(RSS 등)
      - set: enableRobotsTXT = true
 
-  4) 첫 포스트로 Titanic_medium_en.md 등록
+  4) 첫 포스트로 Titanic_medium_en.md 등록 ✅ (완료)
      - create: content/post/titanic-foundry-pipeline/index.md
      - add: front matter(title/date/draft=false/slug/tags/categories)
      - copy: first_post_source 내용을 본문에 삽입
@@ -80,6 +80,7 @@ PLAN:
          - upload-pages-artifact (public/)
          - deploy-pages
      - ensure: permissions pages:write, id-token:write
+     - status: ✅ (완료)
 
   6) Google AdSense 통합(승인 전/후 모두 고려)
      - prerequisite:
@@ -192,8 +193,9 @@ categories = ["Data"]
 ## 다음 액션(진행 순서)
 
 - [x] `PLAN.md` 기준으로 Hugo 프로젝트 생성 + Stack 테마 연결  
-- [ ] `Titanic_medium_en.md`를 첫 포스트로 변환/이동  
-- [ ] GitHub Actions 배포 파이프라인 추가(푸시마다 자동 배포)  
+- [x] 사이트 기본 설정(운영 최소치) 적용  
+- [x] `Titanic_medium_en.md`를 첫 포스트로 변환/이동  
+- [x] GitHub Actions 배포 파이프라인 추가(푸시마다 자동 배포)  
 - [ ] AdSense head 삽입 + 정책 페이지(Privacy/Contact) 추가  
 - [ ] SEO 설정/메타/사이트맵/robots/OG/구조화데이터까지 마무리
 

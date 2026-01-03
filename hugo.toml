@@ -1,6 +1,19 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://luke-hyungjin.github.io/blog/'
+languageCode = 'ko-kr'
+title = 'LUKE-hyungjin Blog'
+timeZone = 'Asia/Seoul'
+
+# Pagination / summaries
+summaryLength = 70
+
+# SEO
+enableRobotsTXT = true
 
 # Stack theme
 theme = 'hugo-theme-stack'
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ['HTML', 'RSS']
