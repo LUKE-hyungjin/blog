@@ -1,0 +1,14 @@
+# Hugo build outputs / caches
+public/
+resources/
+.hugo_build.lock
+
+# Local tooling artifacts
+.cache/
+bin/
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+
