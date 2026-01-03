@@ -1,11 +1,11 @@
 baseURL = 'https://luke-hyungjin.github.io/blog/'
-languageCode = 'ko-kr'
-title = 'LUKE-hyungjin Blog'
+languageCode = 'en-us'
+title = 'LUKE'
 timeZone = 'Asia/Seoul'
 
-# i18n / CJK (Korean)
-defaultContentLanguage = 'ko'
-hasCJKLanguage = true
+# i18n
+defaultContentLanguage = 'en'
+hasCJKLanguage = false
 
 # Pagination / summaries
 summaryLength = 70
@@ -33,7 +33,7 @@ theme = 'hugo-theme-stack'
 
 [params]
   # Used by Stack theme as default meta description when page description is not provided.
-  description = 'LUKE-hyungjin 기술 블로그'
+  description = 'Tech blog'
   mainSections = ['post']
 
   [params.article]
@@ -41,7 +41,34 @@ theme = 'hugo-theme-stack'
     readingTime = true
 
   [params.sidebar]
-    subtitle = 'LUKE-hyungjin 기술 블로그'
+    subtitle = 'Tech blog'
+
+[params.sidebar.avatar]
+  enabled = true
+  local = true
+  src = 'img/avatar.jpg'
+
+[menu]
+  [[menu.social]]
+    identifier = 'website'
+    name = 'Website'
+    url = 'https://www.lukedev.info/'
+    [menu.social.params]
+      Icon = 'website'
+
+  [[menu.social]]
+    identifier = 'github'
+    name = 'GitHub'
+    url = 'https://github.com/LUKE-hyungjin'
+    [menu.social.params]
+      Icon = 'github'
+
+  [[menu.social]]
+    identifier = 'linkedin'
+    name = 'LinkedIn'
+    url = 'https://www.linkedin.com/in/%ED%98%95%EC%A7%84-%EC%9D%B4-ab1a29247/'
+    [menu.social.params]
+      Icon = 'linkedin'
 
   [params.widgets]
     homepage = [
