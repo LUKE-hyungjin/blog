@@ -3,6 +3,10 @@ languageCode = 'ko-kr'
 title = 'LUKE-hyungjin Blog'
 timeZone = 'Asia/Seoul'
 
+# i18n / CJK (Korean)
+defaultContentLanguage = 'ko'
+hasCJKLanguage = true
+
 # Pagination / summaries
 summaryLength = 70
 
@@ -12,8 +16,40 @@ enableRobotsTXT = true
 # Stack theme
 theme = 'hugo-theme-stack'
 
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[permalinks]
+  post = '/p/:slug/'
+  page = '/:slug/'
+
 [pagination]
   pagerSize = 10
 
 [outputs]
   home = ['HTML', 'RSS']
+
+[params]
+  # Used by Stack theme as default meta description when page description is not provided.
+  description = 'LUKE-hyungjin 기술 블로그'
+  mainSections = ['post']
+
+  [params.article]
+    toc = true
+    readingTime = true
+
+  [params.sidebar]
+    subtitle = 'LUKE-hyungjin 기술 블로그'
+
+  [params.widgets]
+    homepage = [
+      { type = 'search' },
+      { type = 'archives', params = { limit = 5 } },
+      { type = 'categories', params = { limit = 10 } },
+      { type = 'tag-cloud', params = { limit = 10 } }
+    ]
+    page = [
+      { type = 'toc' }
+    ]

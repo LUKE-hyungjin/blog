@@ -115,6 +115,7 @@ PLAN:
          - minify on
          - 불필요한 JS/CSS 최소화(테마 기본 유지)
          - Lighthouse/Pagespeed로 재검증
+     - status: ✅ (완료 - 기술 설정)
 ```
 
 ---
@@ -197,6 +198,6 @@ categories = ["Data"]
 - [x] `Titanic_medium_en.md`를 첫 포스트로 변환/이동  
 - [x] GitHub Actions 배포 파이프라인 추가(푸시마다 자동 배포)  
 - [ ] AdSense head 삽입 + 정책 페이지(Privacy/Contact) 추가  
-- [ ] SEO 설정/메타/사이트맵/robots/OG/구조화데이터까지 마무리
+- [x] SEO 설정/메타/사이트맵/robots/OG/구조화데이터까지 마무리
 
 
