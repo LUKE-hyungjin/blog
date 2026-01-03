@@ -1,6 +1,6 @@
 +++
 title = "[Palantir Foundry] Titanic Survivor Prediction Project (1/2) — Data Preprocessing"
-description = "Palantir Foundry의 Pipeline Builder(노코드)로 Kaggle Titanic 데이터를 업로드하고 결측치 처리 및 피처 엔지니어링까지 진행해 모델링 준비를 마칩니다."
+description = "Using Palantir Foundry's no-code Pipeline Builder, we upload the Kaggle Titanic dataset, handle missing values, and perform feature engineering to get the data ready for modeling."
 date = 2026-01-03T00:00:00+09:00
 draft = false
 slug = "titanic-foundry-pipeline-builder"
