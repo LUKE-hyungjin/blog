@@ -31,14 +31,62 @@ theme = 'hugo-theme-stack'
 [outputs]
   home = ['HTML', 'RSS']
 
+[related]
+  includeNewer = true
+  threshold = 60
+  toLower = false
+  [[related.indices]]
+    name = 'tags'
+    weight = 100
+  [[related.indices]]
+    name = 'categories'
+    weight = 200
+
 [params]
   # Used by Stack theme as default meta description when page description is not provided.
   description = 'Tech blog'
   mainSections = ['post']
+  favicon = '/favicon.svg'
+
+  [params.imageProcessing]
+    [params.imageProcessing.cover]
+      enabled = true
+    [params.imageProcessing.content]
+      enabled = true
+
+  [params.defaultImage]
+    [params.defaultImage.opengraph]
+      enabled = true
+      local = true
+      src = 'img/avatar.jpg'
 
   [params.article]
     toc = true
     readingTime = true
+
+  [params.comments]
+    enabled = true
+    provider = 'giscus'
+
+    [params.comments.giscus]
+      repo = 'LUKE-hyungjin/blog'
+      repoID = 'R_kgDOQy9J7A'
+      category = 'General'
+      categoryID = 'DIC_kwDOQy9J7M4C0hqR'
+      mapping = 'pathname'
+      strict = 0
+      reactionsEnabled = 1
+      emitMetadata = 0
+      inputPosition = 'bottom'
+      # Match Stack's light/dark as closely as possible
+      lightTheme = 'light'
+      darkTheme = 'transparent_dark'
+      lang = 'en'
+      loading = 'lazy'
+
+  [params.colorScheme]
+    toggle = true
+    default = 'auto'
 
   [params.sidebar]
     subtitle = 'Tech blog'
