@@ -46,7 +46,8 @@ theme = 'hugo-theme-stack'
   # Used by Stack theme as default meta description when page description is not provided.
   description = 'Tech blog'
   mainSections = ['post']
-  favicon = '/favicon.svg'
+  # Use relative path so Hugo resolves it correctly under GitHub Pages Project Pages (/blog/)
+  favicon = 'favicon.svg'
 
   [params.imageProcessing]
     [params.imageProcessing.cover]
