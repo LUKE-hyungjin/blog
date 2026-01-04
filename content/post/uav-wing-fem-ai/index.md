@@ -28,22 +28,22 @@ categories = ["Simulation"]
 
 - **Stage 1 (geometry preview)**: Generated 200 wings and rendered `wing_viz.glb` in Gradio.
 
-![Stage 1 preview (wing_viz.glb)](Pasted%20image%2020260104170019.png)
+![Stage 1 preview (wing_viz.glb)](pasted-image-20260104170019.png)
 
 - **Stage 2 (Upper/Root debug coloring)**: `surf_sets.glb` shows that Upper/Root are correctly separated.
   - Upper: Blue
   - Root: Red
   - Else: Gray
 
-![Stage 2 debug (surf_sets.glb)](Pasted%20image%2020260104220000.png)
+![Stage 2 debug (surf_sets.glb)](pasted-image-20260104220000.png)
 
-![Stage 2 debug (surf_sets.glb)](Pasted%20image%2020260104220042.png)
+![Stage 2 debug (surf_sets.glb)](pasted-image-20260104220042.png)
 
 - **Stage 3 (stress + pressure direction arrows)**: Toggle stress coloring plus sampled pressure direction arrows (200 samples).
 
-![Stage 3 stress + arrows](Pasted%20image%2020260104220910.png)
+![Stage 3 stress + arrows](pasted-image-20260104220910.png)
 
-![Stage 3 stress + arrows](Pasted%20image%2020260104220959.png)
+![Stage 3 stress + arrows](pasted-image-20260104220959.png)
 
 ---
 
@@ -115,7 +115,7 @@ Generate 200 random airfoil-like wing shapes.
 python scripts/generate_geometry_dataset.py --count 200 --seed 42
 ```
 
-![Stage 1 preview](Pasted%20image%2020260104170019.png)
+![Stage 1 preview](pasted-image-20260104170019.png)
 
 Outputs (per case):
 
@@ -139,7 +139,7 @@ Run a repair script to fix existing outputs in bulk:
 python scripts/repair_geometry_glb.py
 ```
 
-![Repair script result](Pasted%20image%2020260104170318.png)
+![Repair script result](pasted-image-20260104170318.png)
 
 ---
 
@@ -176,9 +176,9 @@ Fix (high-level):
 - Stabilize outward normals using `dot(n, C_f - C_vol)` (align outward direction)
 - Remove “tiny fragments” in upper candidates by keeping **only the largest connected component**
 
-![Meshing debug (before/after)](Pasted%20image%2020260104220000.png)
+![Meshing debug (before/after)](pasted-image-20260104220000.png)
 
-![Meshing debug (before/after)](Pasted%20image%2020260104220042.png)
+![Meshing debug (before/after)](pasted-image-20260104220042.png)
 
 ---
 
@@ -243,9 +243,9 @@ In Gradio:
 - `Preview Mode = FEM Result`
 - Toggle **Show Pressure Arrows (sampled)** ON/OFF
 
-![Pressure arrows (sampled)](Pasted%20image%2020260104220910.png)
+![Pressure arrows (sampled)](pasted-image-20260104220910.png)
 
-![Pressure arrows (sampled)](Pasted%20image%2020260104220959.png)
+![Pressure arrows (sampled)](pasted-image-20260104220959.png)
 
 ---
 
