@@ -8,8 +8,6 @@ tags = ["FEM", "UAV", "Blender", "Gmsh", "CalculiX", "Gradio", "Simulation"]
 categories = ["Simulation"]
 +++
 
-## Deep-FEM-UAV-Wing Dev Log (1/2): Geometry → Meshing → FEM
-
 > Goal: **Generate 200 parametric UAV wings in Blender**, create **tetrahedral volume meshes** with Gmsh, run **linear static analysis** with CalculiX, and finally **inspect pre-computed results** in a Gradio viewer.
 
 ---
