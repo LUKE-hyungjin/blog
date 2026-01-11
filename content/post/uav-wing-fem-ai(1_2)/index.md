@@ -6,6 +6,7 @@ draft = false
 slug = "deep-fem-uav-wing-geometry-meshing-fem"
 tags = ["FEM", "UAV", "Blender", "Gmsh", "CalculiX", "Gradio", "Simulation"]
 categories = ["Simulation"]
+image = "pasted-image-20260104220000.png"
 +++
 
 > Goal: **Generate 200 parametric UAV wings in Blender**, create **tetrahedral volume meshes** with Gmsh, run **linear static analysis** with CalculiX, and finally **inspect pre-computed results** in a Gradio viewer.

@@ -6,6 +6,7 @@ draft = false
 slug = "titanic-foundry-training-workshop"
 tags = ["Palantir", "Foundry", "Titanic", "ML", "Workshop", "Kaggle"]
 categories = ["Palantir"]
+image = "pasted-image-20260106231026.png"
 +++
 
 > This post continues from Part 1 (preprocessing). Using `titanic_cleaned_train`, we go through: **(1) model training in JupyterLab → (2) Kaggle submission → (3) visualization with a Workshop dashboard**.

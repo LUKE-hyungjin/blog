@@ -64,6 +64,7 @@ theme = 'hugo-theme-stack'
   [params.article]
     toc = true
     readingTime = true
+    math = true
 
   [params.comments]
     enabled = true
