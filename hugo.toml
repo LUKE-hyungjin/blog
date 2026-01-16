@@ -2,19 +2,33 @@ baseURL = 'https://luke-hyungjin.github.io/blog/'
 languageCode = 'en-us'
 title = 'LUKE'
 timeZone = 'Asia/Seoul'
+theme = 'hugo-theme-stack'
 
 # i18n
 defaultContentLanguage = 'en'
-hasCJKLanguage = false
+hasCJKLanguage = true
+
+[languages.en]
+  languageName = 'English'
+  title = 'LUKE'
+  weight = 1
+
+[languages.en.params.sidebar]
+  subtitle = 'Tech blog'
+
+[languages.ko]
+  languageName = '한국어'
+  title = 'LUKE'
+  weight = 2
+
+[languages.ko.params.sidebar]
+  subtitle = '기술 블로그'
 
 # Pagination / summaries
 summaryLength = 70
 
 # SEO
 enableRobotsTXT = true
-
-# Stack theme
-theme = 'hugo-theme-stack'
 
 [sitemap]
   changefreq = 'weekly'
